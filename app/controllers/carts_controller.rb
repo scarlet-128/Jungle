@@ -2,7 +2,7 @@ class CartsController < ApplicationController
 
   def show
   end
-
+  
   def add_item
     product_id = params[:product_id].to_s
     modify_cart_delta(product_id, +1)
