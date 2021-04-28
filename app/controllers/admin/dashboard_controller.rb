@@ -4,7 +4,7 @@ class Admin::DashboardController < ApplicationController
   def show
   #   logger.debug "env:#{ENV['ADMIN_USERNAME']}"
   # puts ENV['ADMIN_PASSWORD']
-    @number_of_products = Product.all.count
-    @number_of_categories = Category.all.length
+  @product_count = Product.count()
+  @category_count = Category.count()
   end
 end

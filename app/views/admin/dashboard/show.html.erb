@@ -1,4 +1,18 @@
 
 <h1>Admin Dashboard</h1>
-<h4><%= "The current number of different products in stock: #{@number_of_products}" %></h4>
-<h4><%= "The current number of categories in stock: #{@number_of_categories}"%></h4>
+<table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Product Count</th>
+          <th>Category Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><a href="/admin/products"><%= @product_count %></a></th>
+          <th><a href="/admin/products"><%= @category_count %></a></th>
+        </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
